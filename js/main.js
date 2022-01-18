@@ -19,21 +19,20 @@ window.onclick = function(event) {
   }
 }
 // show image in home
-var modal = document.getElementById("myModal");
+var modal3 = document.getElementById("myModal");
 
 var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
 function image(event)  {    
-    modal.style.display = "block";
+    modal3.style.display = "block";
     modalImg.src = event.target.src;
-    captionText.innerHTML = event.target.alt;
 }
 
-var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[0];
 
-span.onclick = function () {
-    modal.style.display = "none";
+span2.onclick = function () {
+    modal3.style.display = "none";
 }
+
 
 // counter-container
 const countdown=()=>{

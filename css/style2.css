@@ -6,6 +6,9 @@
 .big_container{
     display: flex;
     flex-direction: row;
+    padding: 20px;
+    margin-bottom: 2rem;
+    justify-content: space-between;   
 }
 /* //slider */
 
@@ -26,13 +29,13 @@
       .next {
         cursor: pointer;
         position: relative;
-        top: 30%;
+        top: -130px;
         width: auto;
-        padding: 16px;
-        margin-top: -10px;
+        padding: 60px;
+
         color: black;
         font-weight: bold;
-        font-size: 10px;
+        font-size: 20px;
         border-radius: 0 3px 3px 0;
         user-select: none;
         z-index: 100;
@@ -41,14 +44,8 @@
       
       /* Position the "next button" to the right */
       .next {
-        right: 0;
+        right: 60px;
         border-radius: 3px 0 0 3px;
-      }
-      
-      /* On hover, add a black background color with a little bit see-through */
-      .prev:hover,
-      .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
       }
 
       .row_im{
