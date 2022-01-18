@@ -74,7 +74,8 @@ html{
 .nav_list{
       padding: 5px 0 ;
       color:black;
-      list-style: none;   
+      list-style: none; 
+        
   }
 .nav_list .nav_item {
     margin: 0 8px 0 18px;
@@ -84,12 +85,14 @@ html{
     padding: 5px;
     text-decoration: none;
     border-left: 1px solid black;
+    
 }
 .nav_list .nav_item .nav_link {
     text-decoration: none;
     color: black;
     margin: 5px 11.25px;
     text-align: center;
+   
 }
 .nav_link:hover{
     color: var(--first-color);
@@ -185,6 +188,250 @@ html{
     }
 
 }
+   /* login */
+     
+.container {
+    padding: 36px;
+    margin: 0 3rem;
+  }
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container2 p{
+    text-align: center;
+    color: var(--title-color);
+ 
+}
+.login_btn2{
+    background-color: var(--container-color);
+    color: var(--title-color);
+    padding: 14px 20px;
+    margin: 8px auto;
+    border-radius: var(--mb-0-5);
+    cursor: pointer;
+    font-size: var(--normal-font-size);
+    width: 50%;
+    border: none;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+.counter-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     color: var(--second-color);
+}
+
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    font-size: var(--normal-font-size);
+    display: inline-block;
+    background-color: var(--color-lighter);
+    border-radius: var(--mb-0-25);
+    color: var(--text-color-light);
+  }
+  
+  /* Set a style for all buttons */
+  .login_btn {
+    background-color: var(--second-color);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    font-size: var(--h2-font-size);
+    border-radius: var(--mb-0-5);
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .login_btn:hover {
+    opacity: 0.8;
+  }
+  .textcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  .psw a{
+      margin-top: -55px;
+      margin-left: 20px;
+    float: left;
+    color: blue;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* The Modal  */
+  
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+  
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: var(--container-color);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    border-radius: var(--mb-0-5);
+    width: 70%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close2 {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: var(--container-color);
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .psw {
+       display: block;
+       float: none;
+    }
+    
+  }
+
+  /* ////////////sign up /////////////////*/
+  
+/* Full-width input fields */
+input[type=email],input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    font-size: var(--normal-font-size);
+    border-radius: var(--mb-0-5);
+    background: var(--color-lighter);
+  }
+  input[type=tel],select{
+    width: 60%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    font-size: var(--h3-font-size);
+    border: none;
+    border-radius: var(--mb-0-5);
+    background: var(--color-lighter);
+    float: right;
+  }
+  select{
+    width: 35%;
+    float: left;
+  }
+  select img{
+      width: 20px;
+      height: 20px;
+      position: relative;
+  }
+  .modal-content p{
+      padding: 10px;
+  }
+.container2 img{
+    width: 10px;
+    height: 10px;
+}
+  input[type=text]:focus, input[type=password]:focus,
+  input[type=email]:focus,input[type=number]:focus {
+    background-color:var(--color-lighter);
+    outline: none;
+  }
+  
+  .sign_btn3 {
+    background-color: var(--text-color-light);
+    color: var(--title-color);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: var(--mb-0-5);
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 10px;
+  }
+  
+
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid var(--color-lighter);
+    margin-bottom: 25px;
+  }
+   
+  /* The Close Button (x) */
+  .close3 {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close3:hover,
+  .close3:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  /* .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+   */
+
 /* slide */
 
 .slider-container {
@@ -203,7 +450,6 @@ html{
     position: relative;
 
   }
-
 .slides {
     display: flex;
     overflow-x: scroll; 
@@ -225,7 +471,6 @@ html{
     position: relative;
     animation-name: moves;
     animation-duration: 15s;
-    
     animation-direction: alternate-reverse;  
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -239,6 +484,7 @@ html{
 @keyframes moves{
     0%   { transform: translateX(0px);
    }
+  
     100%  {  transform: translateX(5600px);
    }
 
@@ -316,13 +562,16 @@ html{
     display: flex;
     flex-direction: row;
     padding: 20px;
+    margin-bottom: 2rem;
     justify-content: space-between;                                            
 }
 .section_dep h2{
     margin: var(--mb-1-5);
 color: var(--color-alt);
 }
-    .column {
+    .column ,
+    .div3,
+    .div1{
     width: 25%;
     padding: 0 15px;
     margin: 10px;
@@ -357,38 +606,101 @@ color: var(--color-alt);
 
       }
   /* gallery */
-  .wrapper
-  {  
-      margin: 0px auto;
-      max-width: 1100px;
-  }
+  .myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-  .gallery{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    overflow: hidden;
+.myImg:hover {
+    opacity: 0.7;
 }
-.gallery .image{
-    padding: 10px;
-    width: calc(100%/4);
-}
-.gallery .image img{
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
     width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
 }
-@media screen and (max-width: 500px) {
-    .gallery{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
     }
-    .gallery .image{
-        padding: 10px;
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
         width: 100%;
     }
-  }
+}
  /* card */
  .card_sal {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -426,6 +738,7 @@ color: var(--color-alt);
     font-size: 22px;
     font-weight: bold;
   }
+  
  /* footer */
 
 
@@ -598,3 +911,11 @@ color: black;
     display: block;
     color: blue;
 }
+
+.section-title{
+    margin: 1rem 2rem;
+    font-weight: var(--font-semi-bold);
+    font-size: var(--h1-font-size);
+}
+
+

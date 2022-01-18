@@ -1,0 +1,21 @@
+.tit_nav{
+    color: blue;
+    font-size: 1rem;
+    margin: 2rem;
+}
+.big_container{
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(3,30%,30%,1fr);
+    gap: 10px;
+    justify-content: start;
+    align-content: center;
+}
+/* //slider */
+.di1{
+    margin: 2rem;
+}
+
+.div2{
+    border: none;
+}
