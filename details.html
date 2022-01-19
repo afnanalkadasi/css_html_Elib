@@ -163,38 +163,46 @@
                 <div class="row">
                     
                                 <div  class=" div1 ">
-                                                              <div class="mySlides" style="display: block;">
-     
-                                                                <img src="img/book (1).jpg" style="width:100%">
-                                                              </div>
-                                                            
-                                                              <div class="mySlides">
+                                                <div class="div_ch">
+ 
+                                                                <div class="column_im2">
+                                                                   <img src="img/book (1).jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                                                                 </div>
                                                                 
-                                                                <img src="img/book (2).jpg" style="width:100%">
-                                                              </div>
-                                                            
-                                                              <div class="mySlides">
+                                                </div>
                                                                
-                                                                <img src="img/book (3).jpg" style="width:100%">
-                                                              </div>
+                                                               <div id="myModal" class="modal">
+                                                                 <span class="close_im cursor" onclick="closeModal()">&times;</span>
+                                                                 <div class="modal-content">
+                                                               
+                                                                   <div class="mySlides">
+                                                                     <img src="img/book (1).jpg" style="width:100%">
+                                                                   </div>
+                                                               
+                                                                   <div class="mySlides">
+                                                                     <img src="img/book (2).jpg" style="width:100%">
+                                                                   </div>
+                                                               
+                                                                   <div class="mySlides">
+                                                                     <img src="img/book (3).jpg" style="width:100%">
+                                                                   </div>
                                                                 
-                                                          
-                                                                
-                                                              <a class="prev" onclick="plusSlides(-1)">❮</a>
-                                                              <a class="next" onclick="plusSlides(1)">❯</a>
-                                                            
-                                                           
-                                                              <div class="row_im">
-                                                                <div class="column_im">
-                                                                  <img class="demo cursor" src="img/book (1).jpg" style="width:100%" onclick="currentSlide(1)">
-                                                                </div>
-                                                                <div class="column_im">
-                                                                  <img class="demo cursor" src="img/book (2).jpg" style="width:100%" onclick="currentSlide(2)" >
-                                                                </div>
-                                                                <div class="column_im">
-                                                                  <img class="demo cursor" src="img/book (3).jpg" style="width:100%" onclick="currentSlide(3)" >
-                                                                </div>
-                                                              </div>
+                                                                   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                                                   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                                               
+                                                               
+                                                                   <div class="column_im">
+                                                                     <img class="demo cursor" src="img/book (1).jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                                                                   </div>
+                                                                   <div class="column_im">
+                                                                     <img class="demo cursor" src="img/book (2).jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                                                                   </div>
+                                                                   <div class="column_im">
+                                                                     <img class="demo cursor" src="img/book (3).jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                                                                   </div>
+                                                                 </div>
+                                                               </div>
+                                                                                               
                                 </div>
                                 <div class="div2">
                                         <h2> لأنك الله (كتاب إلكتروني)</h2>
@@ -204,10 +212,14 @@
                                 </div>
                                 <div class="div3">
                                         
-                                        <div class="div3_d1">
-                                                <div>
-                                                        <br>
+                                        <div class="div3_d1"> 
+
+                                        <div class="note">
+                                                        <p><strong>ملاحظة:</strong> سيتم إضافة هذا الكتاب الإلكتروني الى مكتبتك في قارئ جرير
+                                                                <span id="dots">.</span><span id="more"> سيتم إضافة هذا الكتاب الإلكتروني الى مكتبتك في قارئ جرير</span></p>
+                                                        <a onclick="myFunction()" id="myBtn" style="color: blue; cursor: pointer;" > اقرا المزيد</a>
                                                 </div>
+                                               
                                                 <div>
                                                         <br>
                                                 </div>

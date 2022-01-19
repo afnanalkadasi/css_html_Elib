@@ -560,10 +560,10 @@ input[type=email],input[type=text], input[type=password] {
                     /* dep_card */
  .row{
     display: flex;
-    flex-direction: row;
     padding: 20px;
     margin-bottom: 2rem;
-    justify-content: space-between;                                            
+    justify-content:space-between;     
+    align-items: center;                                       
 }
 .section_dep h2{
     margin: var(--mb-1-5);
