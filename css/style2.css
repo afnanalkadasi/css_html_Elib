@@ -1,14 +1,26 @@
-.tit_nav{
-    color: blue;
-    font-size: 1rem;
-    margin: 2rem;
+
+ul.breadcrumb {
+  padding: 20px 16px;
+  list-style: none;
+  background-color: none;
+  margin-top: 20px;
 }
-.big_container{
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    margin-bottom: 2rem;
-    justify-content: space-between;   
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
 }
 /* //slider */
 
