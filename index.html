@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>E-libirty</title>
-    <!-- <script src="https://kit.fontawesome.com/53e9ef6681.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/53e9ef6681.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' type='text/css' media='all' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='css/style2.css'>
+
 </head>
 <body dir="rtl" class="grid-container" id="index">
         <header class="header" >
@@ -212,16 +214,16 @@
 
      </section>
      <section class="wrapper ">
+        <div class="row_wr">
+        <img class="myImg" src="img/slider_img.webp"  onclick="image(event)"  />
 
-        <img class="myImg" src="img/slider_img.webp"  onclick="image(event)" style="width:100%;max-width:300px" />
+        <img class="myImg" src="img/slider_img2.webp"  onclick="image(event)" />
 
-        <img class="myImg" src="img/slider_img2.webp"  onclick="image(event)" style="width:100%;max-width:300px" />
+        <img class="myImg" src="img/slider_img3.jpg"  onclick="image(event)" />
 
-        <img class="myImg" src="img/slider_img3.jpg"  onclick="image(event)" style="width:100%;max-width:300px" />
+        <img class="myImg" src="img/slider_img4.webp"  onclick="image(event)" />
 
-        <img class="myImg" src="img/slider_img4.webp"  onclick="image(event)" style="width:100%;max-width:300px" />
-
-        <img class="myImg" src="img/slider_img.webp"  onclick="image(event)" style="width:100%;max-width:300px" />
+        <img class="myImg" src="img/55.webp"  onclick="image(event)" style="width:100%; height: 150px;" />
 
         <!-- The Modal -->
         <div id="myModal1" class="modal">
@@ -233,22 +235,124 @@
         <img class="modal-content" id="img01">
 
         </div>
+</div>
     </section>
-   
-    <!-- //show books -->
+   <!-- ////////////////////////////sal///// -->
+   <section>
+        <div id="sal" class="modal_card">
+         <span onclick="document.getElementById('sal').style.display='none'" class="close4" title="Close Modal">&times;</span>
+                <div class="modal-content_card">    
+                      
+                                <p> <img src="svg/cart.svg"><strong style="font-size: 40px; font-weight: 600;">السلة</strong>     (3 منتجات)   </p>                
+                                <div class="sal-container">
+                                                <div class="item1">
+                                                        <div class="chil_1" >
+                                                                <img src="img/book (1).jpg" width="40px" height="50px">
+                                                        </div>
+
+                                                        <div class="chil_2">
+                                                                        <h3> البداية والنهاية الجز الاول(كتاب الالكتروني)  </h3>
+                                                                        <p>
+                                                                                منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير
+                                                                        </p>
+                                                                        <div class="note">
+                                                                                        <p><strong style="font-size: 20px;">ملاحظة:</strong>     هذا المنتج رقمي وسيتم توصيلة من خلال البريد الالكتروني
+                                                                                              </p>
+                                                                                        <a  style="color: blue; cursor: pointer; font-size: 15px;" >    كيفية الحصول على المنتج؟ </a>
+                                                                        </div>
+                                                                
+                                                                        <hr>
+                                                                        <i class="fas fa-times-circle" style="font-size: 10px;"></i>   <a class="btn_x" >  احذف </a>
+                                                        </div>
+                                                        <strong style="color: red; font-size: 20px; font-weight: bold;">3.99ر.س</strong>
+
+                                                </div>
+                                                <div class="item2">
+                                                                <div class="chil_1" >
+                                                                                <img src="img/book (2).jpg" width="40px" height="50px">
+                                                                        </div>
+                
+                                                                        <div class="chil_2">
+                                                                                        <h3> فن اللامبالة  </h3>
+                                                                                        <p>
+                                                                                                        منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير
+                                                                                                </p>
+                                                                                        <div class="note">
+                                                                                                        <p><strong style="font-size: 20px;">ملاحظة:</strong>     هذا المنتج رقمي وسيتم توصيلة من خلال البريد الالكتروني
+                                                                                                              </p>
+                                                                                                        <a  style="color: blue; cursor: pointer; font-size: 15px;" >    كيفية الحصول على المنتج؟ </a>
+                                                                                        </div>
+                                                                                
+                                                                                        <hr>
+                                                                                        <i class="fas fa-times-circle" style="font-size: 10px;"></i>   <a class="btn_x" >  احذف </a>
+                                                                        </div>
+                                                                        <strong style="color: red; font-size: 20px; font-weight: bold;">3.99ر.س</strong>
+                                                </div>
+                                                <div class="item3">
+                                                                <div class="chil_1" >
+                                                                                <img src="img/book (3).jpg" width="40px" height="50px">
+                                                                        </div>
+                
+                                                                        <div class="chil_2">
+                                                                                        <h3> غدا أجمل    </h3>
+                                                                                        <p>
+                                                                                                        منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير
+                                                                                                </p>
+                                                                                        <div class="note">
+                                                                                                        <p><strong style="font-size: 20px;">ملاحظة:</strong>     هذا المنتج رقمي وسيتم توصيلة من خلال البريد الالكتروني
+                                                                                                              </p>
+                                                                                                        <a  style="color: blue; cursor: pointer; font-size: 15px;" >    كيفية الحصول على المنتج؟ </a>
+                                                                                        </div>
+                                                                                
+                                                                                        <hr>
+                                                                                        <i class="fas fa-times-circle" style="font-size: 10px;"></i>   <a class="btn_x" >  احذف </a>
+                                                                        </div>
+                                                                        <strong style="color: red; font-size: 20px; font-weight: bold;">3.99</strong><p>ر.س</p>
+                                                </div>  
+                                                <div class="item4">
+                                                        <div class="ch_item">
+                                                                <div>
+                                                                <p>المجموع </p>
+                                                                <p>تكاليف الشحن</p>
+                                                              <span> <strong style="color: red; font-size: 20px; font-weight: bold;">المجموع الكلي</strong>شامل الضريبة</span>
+                                                                </div>
+                                                                <div>
+                                                                <p>ر.س <strong style="color: black; font-size: 20px; font-weight: bold;">68.97</strong> 
+                                                                <strong style="color: green; font-size: 20px; font-weight: bold;">مجاني</strong>           
+                                                                <strong style="color: red; font-size: 20px; font-weight: bold;">68.97</strong><p>ر.س</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="ch_item2">
+                                                                        <p>بالضغط على "انهاء التسوق " فانت توافق على 
+                                                        <span  style="color: blue; cursor: pointer;" >على الشروط والاحكام وسياسة الخصوصية</span>
+                                                                 </p>
+                                                                 <button style="color:red;">تحديث سلة التسوق</button>
+                                                        </div>
+                                                      
+                                                </div>
+                                </div>                   
+                             
+                              
+                       
+                </div>   
+        </div>
+                               
+                                       
+      </section>
+ 
+   <!-- //show books -->
         <section class="section1">
-                    <h2 class="section-title">العروض الحالية</h2>
-               
+                    <h2 class="section-title">العروض الحالية</h2>     
                     <div class="row ">
                             <div class="card_sal">
-                                    <img src="img/book (1).jpg" onclick="document.getElementById('idlog').style.display='block' ">
+                                  <a href="details.html"><img src="img/book (1).jpg" ></a>  
                                     <h1>كتاب إلكتروني</h1>
                                     <p>كبريا وهوى(كتاب إلكتروني)</p>
                                     <strong class="price">$19.99</strong>
                                     <p>شامل الضريبة</p>
                                     <div >
-                                        <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                        <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                        <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                        <button class="card_icon" onclick="document.getElementById('sal').style.display='block'"><img src="svg/cart-1.svg" ></button>
                                         <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                     </div>
                                     <div  class="counter-container " >
@@ -267,7 +371,7 @@
                                     <p>شامل الضريبة</p>
                                     <div >
                                         <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                        <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                        <button class="card_icon" onclick="document.getElementById('sal').style.display='block'"><img src="svg/cart-1.svg"><img src="svg/cart-1.svg" ></button>
                                         <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                     </div>
                                     <div  class="counter-container " >
@@ -286,7 +390,7 @@
                                     <p>شامل الضريبة</p>
                                     <div >
                                         <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                        <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                        <button class="card_icon"onclick="document.getElementById('sal').style.display='block'"><img src="svg/cart-1.svg"><img src="svg/cart-1.svg" ></button>
                                         <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                     </div>
                                     <div  class="counter-container " >
@@ -305,7 +409,7 @@
                                     <p>شامل الضريبة</p>
                                     <div >
                                         <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                        <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                        <button class="card_icon"onclick="document.getElementById('sal').style.display='block'"><img src="svg/cart-1.svg"><img src="svg/cart-1.svg" ></button>
                                         <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                     </div>
                                     <div  class="counter-container " >
@@ -323,7 +427,7 @@
                                         <p>شامل الضريبة</p>
                                         <div >
                                             <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                            <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                            <button class="card_icon"onclick="document.getElementById('sal').style.display='block'"><img src="svg/cart-1.svg"><img src="svg/cart-1.svg" ></button>
                                             <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                         </div>
                                         <div  class="counter-container " >

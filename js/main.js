@@ -209,6 +209,16 @@ function openModal() {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
   }
+
+  /////sal////////////
+var modal_s = document.getElementById('sal');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal_s ) {
+    modal_s.style.display = "none";
+  }
+}
             //////////read more////////
       function myFunction() {
         var dots = document.getElementById("dots");
