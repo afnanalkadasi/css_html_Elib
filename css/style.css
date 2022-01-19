@@ -1026,6 +1026,7 @@ color: black;
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
+    
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -1040,7 +1041,8 @@ color: black;
     border: none;
     border-radius: 1rem;
     width: 1000px;
-    height: 1000px; /* Could be more or less, depending on screen size */
+    height: 800px;
+    overflow: hidden; /* Could be more or less, depending on screen size */
   }
   
    
@@ -1068,12 +1070,11 @@ color: black;
   }
 
  .sal-container {
-  
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
+    grid-template-columns: 60% 40%;
+    grid-gap: 8px;
     background-color: var(--container-color);
-    padding: 10px;
+    padding: 0 16px;
    
   }
   
@@ -1105,30 +1106,76 @@ color: black;
     border-radius: 5px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
+    padding: 5px;
     flex-direction: row;
   }
+ 
   .item4 {
-      float: left;
       grid-row: 1 / 4;
       box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
       border-radius: 5px;
       display: flex;
       flex-direction: column;
-     
+      justify-content: space-between;
+      height: 340px;
     
-      
   } 
 .ch_item{
+    padding:0 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: var(--mb-1);
 }
 .ch_item p {
-    font-size: 15px;
+    font-size: 16px;
 }
+.ch_item span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.ch_item2{
+    margin-top: 30px;
+}
+.ch_item2 p{
+    font-size: 16px;
+    padding:0 15px;
+}
+
 .btn_x{
    text-decoration: none;
    font-size: 20px;
    margin: 0 10px 10px 0;
 }
 
+.ch_item2 button {
+    background-color: var(--second-color);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 0 0;
+    border: none;
+    font-size: var(--h2-font-size);
+    border-radius: var(--mb-0-5);
+    cursor: pointer;
+    width: 100%;
+  }
+  .ch_item2 button a{
+    color: white;
+    text-decoration: none;
+  }
+  /* /////////////////category/// */
+  .cat_row{
+      display: flex;
+      flex-direction: row;
+  }
+  .cat_row_r{
+      display: flex;
+      flex-direction: column;
+  }
+  .it_ca_1{
+      padding: 10px;
+      background-color: var(--container-color);
+      border: 1px green solid;
+      border-radius: var(--mb-0-5);
+      color: green;
+  }
