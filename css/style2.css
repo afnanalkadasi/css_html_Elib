@@ -31,7 +31,10 @@ ul.breadcrumb li a:hover {
 /* //slider */
 
 .div_ch{
- padding: 10px 40px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
 .div_ch:after {
@@ -44,9 +47,23 @@ ul.breadcrumb li a:hover {
   float: left;
   width: 25%;
 }
-
+.column_im2 {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+.row_im{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row_im:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* The Modal (background) */
-.modal {
+.modal_im {
   display: none;
   position: fixed;
   z-index: 1;
@@ -60,13 +77,14 @@ ul.breadcrumb li a:hover {
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content_im {
   position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
   width: 90%;
   max-width: 1200px;
+  justify-content: center;
 }
 
 /* The close_im Button */

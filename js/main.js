@@ -175,11 +175,11 @@ setInterval(countdown5,1000);
 //////////// slider image/////////
 
 function openModal() {
-    document.getElementById("myModal").style.display = "block";
+    document.getElementById("myModal_im").style.display = "block";
   }
   
   function closeModal() {
-    document.getElementById("myModal").style.display = "none";
+    document.getElementById("myModal_im").style.display = "none";
   }
   
   var slideIndex = 1;
