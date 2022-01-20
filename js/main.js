@@ -18,6 +18,33 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+//////////////slider head
+var slideIndex2 = 0;
+showSlides_he();
+function plusSlides_he(n) {
+  showSlides_he(slideIndex2 += n);
+}
+
+function currentSlide_he(n) {
+  showSlides_he(slideIndex2 = n);
+}
+
+function showSlides_he() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex2++;
+  if (slideIndex2 > slides.length) {slideIndex2 = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex2-1].style.display = "block";  
+  dots[slideIndex2-1].className += " active";
+  setTimeout(showSlides_he, 15000); // Change image every 2 seconds
+}
 // show image in home
 var modal3 = document.getElementById("myModal1");
 
@@ -32,6 +59,8 @@ var span2 = document.getElementsByClassName("close")[0];
 span2.onclick = function () {
     modal3.style.display = "none";
 }
+
+////////////////card 1
 
 
 // counter-container
@@ -182,43 +211,33 @@ function openModal() {
     document.getElementById("myModal_im").style.display = "none";
   }
   
-  var slideIndex = 1;
-  showSlides(slideIndex);
+  var slideIndex3 = 1;
+  showSlides(slideIndex3);
   
   function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides(slideIndex3 += n);
   }
   
   function currentSlide(n) {
-    showSlides(slideIndex = n);
+    showSlides(slideIndex3 = n);
   }
   
   function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
+    var slides = document.getElementsByClassName("mySlides_im");
     var dots = document.getElementsByClassName("demo");
   
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) {slideIndex3= 1}
+    if (n < 1) {slideIndex3 = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    slides[slideIndex3-1].style.display = "block";
+    dots[slideIndex3-1].className += " active";
   }
-
-  /////sal////////////
-var modal_s = document.getElementById('sal');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal_s ) {
-    modal_s.style.display = "none";
-  }
-}
             //////////read more////////
       function myFunction() {
         var dots = document.getElementById("dots");
@@ -235,3 +254,4 @@ window.onclick = function(event) {
           moreText.style.display = "inline";
         }
       }
+/////////////////cate

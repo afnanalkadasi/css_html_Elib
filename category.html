@@ -35,50 +35,50 @@
                                         <i class="fas fa-search"></i>
                                     </form>
                            </div>
-                            <div class="icon_shop">
+                          
+                            <div class="icon_shop"  id="display">
                                     <img src="svg/svgexport-50.svg" >
+                                    <span style="color: white; border-radius: .5rem; background-color: red; width: 15px;
+                           height: 15px; overflow: hidden; font-size: 10px ; text-align: center;" id="display" >0</span>
                             </div>
                     </div>
                 </nav>
             </header>
     <main>
-        <section class="slider-container">
-                <div class="slider">
-                        <div class="slides">
-                          <div id="slides__1" class="slide ">
-                           
-                              <img src="img/slider_img.webp">
-                            <a class="slide__prev" href="#slides__4" title="Next"></a>
-                            <a class="slide__next" href="#slides__2" title="Next"></a>
-                           
-                          </div>
-                          <div id="slides__2" class="slide ">
-                                
-                            <a class="slide__prev" href="#slides__1" title="Prev"></a>
-                            <a class="slide__next" href="#slides__3" title="Next"></a>
-                            <img src="img/slider_img2.webp">
-                          </div>
-                          <div id="slides__3" class="slide ">
-                            <a class="slide__prev" href="#slides__2" title="Prev"></a>
-                            <a class="slide__next" href="#slides__4" title="Next"></a>
-                            <img src="img/slider_img3.jpg">
-
-                          </div>
-                          <div id="slides__4" class="slide ">
-                                  <a class="slide__prev" href="#slides__3" title="Prev"></a>
-                                  <a class="slide__next" href="#slides__1" title="Next"></a>
-                                  <img src="img/slider_img4.webp">
-
-                                </div>
-                        </div>
-                        <div class="slider__nav">
-                          <a class="slider__navlink" href="#slides__1"></a>
-                          <a class="slider__navlink" href="#slides__2"></a>
-                          <a class="slider__navlink" href="#slides__3"></a>
-                          <a class="slider__navlink" href="#slides__4"></a>
-                        </div>
-                      </div>
-        </section>
+            <section>
+                    <div class="slideshow-container">
+            
+                            <div class="mySlides fade">
+                          
+                              <img src="img/slider_img.webp" style="width:100%">
+                              
+                            </div>
+                            
+                            <div class="mySlides fade">
+                      
+                              <img src="img/slider_img2.webp" style="width:100%">
+                             
+                            </div>
+                            
+                            <div class="mySlides fade">
+                            
+                              <img src="img/slider_img3.jpg" style="width:100%">
+                             
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides_he(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides_he(1)">&#10095;</a>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot" onclick="currentSlide_he(1)"></span> 
+                              <span class="dot" onclick="currentSlide_he(2)"></span> 
+                              <span class="dot" onclick="currentSlide_he(3)"></span> 
+                            </div>
+                            
+                  </section>
        
 
         <section class="section_ca">
@@ -87,23 +87,197 @@
                                         <li><a href="#">الكتب العربية</a></li>
                                         <li><a href="#">    كتب الكترونية </a></li>
                         </ul>
-                        <div class="cat_row_r">
-                                <div class="cat_row_it_r"> 
-                                       <div class="it_ca_1"><img src="svg/svgexport-34.svg" >كتب الالكترونية</div>
-                                       <div class="it_ca_2">
-
-                                       </div>
+                        
+  
+                      
+                        
+<div class="cate-container">
+                <div class="cate1">
+                                <div class="packages card_sal" id="packages">
+                                
+                                   <input id="search_input" onkeyup="search_animal()" type="text"
+                                        name="search" placeholder="بحث عن كتاب.."> 
+                                  <div class="box-container" id="product_list">
+                                
+                                        
+                                
+                                        
+                                    </div>
+                                </div>
+                
+                </div>
+          
+                <div class="cate2">
+                                <img src="svg/svgexport-34.svg" >كتب الالكترونية
+                </div>
+               
+                                <div class="card_sal">
+                                                <a href="details.html"><img src="img/book (1).jpg" ></a>  
+                                                  <h1>كتاب إلكتروني</h1>
+                                                  <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                                  <strong class="price">$19.99</strong>
+                                                  <p>شامل الضريبة</p>
+                                                  <div >
+                                                      <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                                      <button class="card_icon"  id="btn_cu"><img src="svg/cart-1.svg" ></button>
+                                                      <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                                  </div>    
+                                </div>
+              
+                                <div class="card_sal">
+                                                <a href="details.html"><img src="img/book (1).jpg" ></a>  
+                                                  <h1>كتاب إلكتروني</h1>
+                                                  <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                                  <strong class="price">$19.99</strong>
+                                                  <p>شامل الضريبة</p>
+                                                  <div >
+                                                      <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                                      <button class="card_icon"  id="btn_cu" ><img src="svg/cart-1.svg" ></button>
+                                                      <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                                  </div>    
+                                </div>
+                                <div class="card_sal">
+                                                <a href="details.html"><img src="img/book (1).jpg" ></a>  
+                                                  <h1>كتاب إلكتروني</h1>
+                                                  <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                                  <strong class="price">$19.99</strong>
+                                                  <p>شامل الضريبة</p>
+                                                  <div >
+                                                      <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                                      <button class="card_icon"  id="btn_cu"><img src="svg/cart-1.svg" ></button>
+                                                      <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                                  </div>    
+                                </div>
+                                <div class="card_sal">
+                                                <a href="details.html"><img src="img/book (1).jpg" ></a>  
+                                                  <h1>كتاب إلكتروني</h1>
+                                                  <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                                  <strong class="price">$19.99</strong>
+                                                  <p>شامل الضريبة</p>
+                                                  <div >
+                                                      <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                                      <button class="card_icon" id="btn_cu"><img src="svg/cart-1.svg" ></button>
+                                                      <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                                  </div>    
                                 </div>
 
-
-                                <div class="cat_row_it_l">
-                                        <div>
-                                                        <select id="country" name="country" >
-                                                                      <option dir="rtl"  value="australia" selected aria-placeholder="hgv">+970</option>الترتيب حسب
-                                                        </select>   
-                                        </div>
+                                <div class="card_sal">
+                                  <br>
+                                  <br>   
                                 </div>
-                        </div>
+
+                                <div class="card_sal">
+                                                <a href="details.html"><img src="img/book (1).jpg" ></a>  
+                                                  <h1>كتاب إلكتروني</h1>
+                                                  <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                                  <strong class="price">$19.99</strong>
+                                                  <p>شامل الضريبة</p>
+                                                  <div >
+                                                      <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                                      <button class="card_icon" id="btn_cu"><img src="svg/cart-1.svg" ></button>
+                                                      <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                                  </div>    
+                                </div>
+                    <div class="card_sal">
+                                                <a href="details.html"><img src="img/book (1).jpg" ></a>  
+                                                  <h1>كتاب إلكتروني</h1>
+                                                  <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                                  <strong class="price">$19.99</strong>
+                                                  <p>شامل الضريبة</p>
+                                                  <div >
+                                                      <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                                      <button class="card_icon" id="btn_cu"><img src="svg/cart-1.svg" ></button>
+                                                      <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                                  </div>    
+                                </div>
+
+                   <div class="card_sal">
+                                                <a href="details.html"><img src="img/book (1).jpg" ></a>  
+                                                  <h1>كتاب إلكتروني</h1>
+                                                  <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                                  <strong class="price">$19.99</strong>
+                                                  <p>شامل الضريبة</p>
+                                                  <div >
+                                                      <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                                      <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                                  </div>    
+                                </div>
+
+                    <div class="card_sal">
+                                                <a href="details.html"><img src="img/book (1).jpg" ></a>  
+                                                  <h1>كتاب إلكتروني</h1>
+                                                  <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                                  <strong class="price">$19.99</strong>
+                                                  <p>شامل الضريبة</p>
+                                                  <div >
+                                                      <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                                      <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                                  </div>    
+                                </div>
+                <div class="cate12">12</div>
+                <div class="card_sal">
+                                <a href="details.html"><img src="img/book (1).jpg" ></a>  
+                                  <h1>كتاب إلكتروني</h1>
+                                  <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                  <strong class="price">$19.99</strong>
+                                  <p>شامل الضريبة</p>
+                                  <div >
+                                      <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                      <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                      <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                  </div>    
+                </div>
+                <div class="card_sal">
+                                <a href="details.html"><img src="img/book (1).jpg" ></a>  
+                                  <h1>كتاب إلكتروني</h1>
+                                  <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                  <strong class="price">$19.99</strong>
+                                  <p>شامل الضريبة</p>
+                                  <div >
+                                      <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                      <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                      <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                  </div>    
+                </div>
+                <div class="card_sal">
+                                <a href="details.html"><img src="img/book (1).jpg" ></a>  
+                                  <h1>كتاب إلكتروني</h1>
+                                  <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                  <strong class="price">$19.99</strong>
+                                  <p>شامل الضريبة</p>
+                                  <div >
+                                      <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                      <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                      <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                  </div>    
+                </div>
+                <div class="card_sal">
+                                <a href="details.html"><img src="img/book (1).jpg" ></a>  
+                                  <h1>كتاب إلكتروني</h1>
+                                  <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                  <strong class="price">$19.99</strong>
+                                  <p>شامل الضريبة</p>
+                                  <div >
+                                      <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                      <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                      <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                  </div>    
+                </div>
+                <div class="cate11">17</div>
+                <div class="cate12">18</div>
+                <div class="cate13">19</div>
+                <div class="cate14">20</div>
+                <div class="cate15">21</div>
+                <div class="cate10">16</div>
+                <div class="cate11">17</div>
+                <div class="cate12">18</div>
+                <div class="cate13">19</div>
+                <div class="cate14">20</div>
+              
+              </div>
+              
      </section>
   
 
@@ -226,5 +400,9 @@
                 </p>
         </div>
 </section> 
+<script src="js/main.js" >
+ 
+ </script>
+ <script src="js/cate.js" ></script>
 </body>
 </html>

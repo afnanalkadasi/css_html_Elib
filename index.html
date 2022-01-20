@@ -7,7 +7,7 @@
     <title>E-libirty</title>
     <script src="https://kit.fontawesome.com/53e9ef6681.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' type='text/css' media='all' href='css/style.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='css/style2.css'>
+    <!-- <link rel='stylesheet' type='text/css' media='all' href='css/style2.css'> -->
 
 </head>
 <body dir="rtl" class="grid-container" id="index">
@@ -115,43 +115,40 @@
                               </div>              
                     </section>
 <!-- //slider image -->
-        <section class="slider-container">
-                        <div class="slider">
-                          <div class="slides">
-                            <div id="slides__1" class="slide ">            
-                                <img src="img/slider_img.webp">
-                              <a class="slide__prev" href="#slides__4" title="Next"></a>
-                              <a class="slide__next" href="#slides__2" title="Next"></a>
-                             
-                            </div>
-                            <div id="slides__2" class="slide ">
-                                  
-                              <a class="slide__prev" href="#slides__1" title="Prev"></a>
-                              <a class="slide__next" href="#slides__3" title="Next"></a>
-                              <img src="img/slider_img2.webp">
-                            </div>
-                            <div id="slides__3" class="slide ">
-                              <a class="slide__prev" href="#slides__2" title="Prev"></a>
-                              <a class="slide__next" href="#slides__4" title="Next"></a>
-                              <img src="img/slider_img3.jpg">
+      <section>
+        <div class="slideshow-container">
 
-                            </div>
-                            <div id="slides__4" class="slide ">
-                                    <a class="slide__prev" href="#slides__3" title="Prev"></a>
-                                    <a class="slide__next" href="#slides__1" title="Next"></a>
-                                    <img src="img/slider_img4.webp">
-
-                                  </div>
-                          </div>
-                          <div class="slider__nav">
-                            <a class="slider__navlink" href="#slides__1"></a>
-                            <a class="slider__navlink" href="#slides__2"></a>
-                            <a class="slider__navlink" href="#slides__3"></a>
-                            <a class="slider__navlink" href="#slides__4"></a>
-                          </div>
-                        </div>
-        </section>
-       
+                <div class="mySlides fade">
+              
+                  <img src="img/slider_img.webp" style="width:100%">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+          
+                  <img src="img/slider_img2.webp" style="width:100%">
+                 
+                </div>
+                
+                <div class="mySlides fade">
+                
+                  <img src="img/slider_img3.jpg" style="width:100%">
+                 
+                </div>
+                
+                <a class="prev" onclick="plusSlides_he(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides_he(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide_he(1)"></span> 
+                  <span class="dot" onclick="currentSlide_he(2)"></span> 
+                  <span class="dot" onclick="currentSlide_he(3)"></span> 
+                </div>
+                
+      </section> 
 
         <section class="section_dep">
                 <h2> تصفح حسب القسم</h2>
@@ -185,30 +182,34 @@
                                   <h3 style="color: #cb3378">سياسة</h3>
                                  
                                 </div>
-                              </div>
+                        </div>
                               
-                              <div class="column">
+                        <div class="column">
                                 <div class="card">
                                       <img src="svg/svgexport-45.svg" class="cr_icon">
                                   <h3 style="color: #1d8ebd">اقتصاد</h3>
                                 
                                 </div>
-                              </div>
+                        </div>
 
-                              <div class="column">
+                        <div class="column">
                                     <div class="card">
                                           <img src="svg/svgexport-47.svg" class="cr_icon">
                                       <h3 style="color: #61b22f">طبخ</h3>
                                      
                                     </div>
-                                  </div>
+                        </div>
                                 
                         <div class="column">
                           <div class="card">
                                 <img src="svg/svgexport-48.svg" class="cr_icon">
                             <h3 style="color: #a9163f;">تربية</h3>
-                          </div>
+                         </div>
                         </div>
+
+                        <a class="prev_card" onclick="plusSlides_card(-1)">&#10094;</a>
+                        <a class="next_card" onclick="plusSlides_card(1)">&#10095;</a>
+                        
                     </div>  
 
 
@@ -237,111 +238,6 @@
         </div>
 </div>
     </section>
-   <!-- ////////////////////////////sal///// -->
-   <section>
-        <div id="sal" class="modal_card">
-         <span onclick="document.getElementById('sal').style.display='none'" class="close4" title="Close Modal">&times;</span>
-                <div class="modal-content_card">    
-                      
-                                <p style="margin-bottom: 50px;"> <img src="svg/cart.svg"><strong style="font-size: 40px; font-weight: 600;">السلة</strong>     (3 منتجات)   </p>                
-                                <div class="sal-container">
-                                                <div class="item1">
-                                                        <div class="chil_1" >
-                                                                <img src="img/book (1).jpg" width="40px" height="50px">
-                                                        </div>
-
-                                                        <div class="chil_2">
-                                                                        <h3> البداية والنهاية الجز الاول(كتاب الالكتروني)  </h3>
-                                                                        <p>
-                                                                                منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير
-                                                                        </p>
-                                                                        <div class="note">
-                                                                                        <p><strong style="font-size: 20px;">ملاحظة:</strong>     هذا المنتج رقمي وسيتم توصيلة من خلال البريد الالكتروني
-                                                                                              </p>
-                                                                                        <a  style="color: blue; cursor: pointer; font-size: 15px;" >    كيفية الحصول على المنتج؟ </a>
-                                                                        </div>
-                                                                
-                                                                        <hr>
-                                                                        <i class="fas fa-times-circle" style="font-size: 10px;"></i>   <a class="btn_x" >  احذف </a>
-                                                        </div>
-                                                        <strong style="color: red; font-size: 20px; font-weight: bold;">3.99ر.س</strong>
-
-                                                </div>
-                                                <div class="item2">
-                                                                <div class="chil_1" >
-                                                                                <img src="img/book (2).jpg" width="40px" height="50px">
-                                                                        </div>
-                
-                                                                        <div class="chil_2">
-                                                                                        <h3> فن اللامبالة  </h3>
-                                                                                        <p>
-                                                                                                        منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير
-                                                                                                </p>
-                                                                                        <div class="note">
-                                                                                                        <p><strong style="font-size: 20px;">ملاحظة:</strong>     هذا المنتج رقمي وسيتم توصيلة من خلال البريد الالكتروني
-                                                                                                              </p>
-                                                                                                        <a  style="color: blue; cursor: pointer; font-size: 15px;" >    كيفية الحصول على المنتج؟ </a>
-                                                                                        </div>
-                                                                                
-                                                                                        <hr>
-                                                                                        <i class="fas fa-times-circle" style="font-size: 10px;"></i>   <a class="btn_x" >  احذف </a>
-                                                                        </div>
-                                                                        <strong style="color: red; font-size: 20px; font-weight: bold;">3.99ر.س</strong>
-                                                </div>
-                                                <div class="item3">
-                                                                <div class="chil_1" >
-                                                                                <img src="img/book (3).jpg" width="40px" height="50px">
-                                                                        </div>
-                
-                                                                        <div class="chil_2">
-                                                                                        <h3> غدا أجمل    </h3>
-                                                                                        <p>
-                                                                                                        منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير
-                                                                                                </p>
-                                                                                        <div class="note">
-                                                                                                        <p><strong style="font-size: 20px;">ملاحظة:</strong>     هذا المنتج رقمي وسيتم توصيلة من خلال البريد الالكتروني
-                                                                                                              </p>
-                                                                                                        <a  style="color: blue; cursor: pointer; font-size: 15px;" >    كيفية الحصول على المنتج؟ </a>
-                                                                                        </div>
-                                                                                
-                                                                                        <hr>
-                                                                                        <i class="fas fa-times-circle" style="font-size: 10px;"></i>   <a class="btn_x" >  احذف </a>
-                                                                        </div>
-                                                                        <strong style="color: red; font-size: 20px; font-weight: bold;">3.99</strong><p>ر.س</p>
-                                                </div>  
-                                                <div class="item4">
-                                                        <div class="ch_item">
-                                                                <div>
-                                                                <span>المجموع </span><br>
-                                                                <span>تكاليف الشحن</span>
-                                                                <br>
-                                                             <strong style="color: red; font-size: 20px; font-weight: bold;">المجموع الكلي</strong>
-                                                              <span  style="color: rgb(155, 155, 155); font-size: 15px;" >شامل الضريبة</span>
-                                                                </div>
-                                                                <div>
-                                                                <strong style="color: black; font-size: 20px; font-weight: bold;">68.97</strong> <span style="color: red;">ر.س.</span>
-                                                                <br>
-                                                                <strong style="color: green; font-size: 20px; font-weight: bold;">مجاني</strong><br>           
-                                                                <strong style="color: red; font-size: 20px; font-weight: bold;">68.97</strong><span style="color: red;">ر.س.</span>
-                                                                </div>
-                                                        </div>
-                                                       
-                                                        <div class="ch_item2">
-                                                                        <p>بالضغط على "انهاء التسوق " فانت توافق على 
-                                                        <span  style="color: blue; cursor: pointer;" >على الشروط والاحكام وسياسة الخصوصية</span>
-                                                                 </p>
-                                                                 <button ><a href="checkout.html">إنهاء التسوق</a></button>
-                                                        </div>
-                                                </div>
-                                </div>                   
-                             
-                              
-                       
-                </div>   
-        </div>
-                               
-                                       
-      </section>
  
    <!-- //show books -->
         <section class="section1">
@@ -354,17 +250,16 @@
                                     <strong class="price">$19.99</strong>
                                     <p>شامل الضريبة</p>
                                     <div >
-                                        <button class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
-                                        <button class="card_icon" onclick="document.getElementById('sal').style.display='block'"><img src="svg/cart-1.svg" ></button>
+                                        <button  class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
+                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                         <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                     </div>
                                     <div  class="counter-container " >
-                                                <div id="days"></div>:&nbsp;&nbsp;
-                                                <div id="hours"></div>:&nbsp;&nbsp;
-                                                <div id="minutes"></div>:&nbsp;&nbsp;
-                                                <div id="seconds"></div>
-                                        </div>
-                                   
+                                                <i class="far fa-clock"></i>    D <div id="days"></div>:
+                                            H<div id="hours"></div>:
+                                            M  <div id="minutes"></div>:
+                                            S<div id="seconds"></div>
+                                    </div>
                             </div>
                             <div class="card_sal">
                                     <img src="img/book (1).jpg" >
@@ -374,34 +269,15 @@
                                     <p>شامل الضريبة</p>
                                     <div >
                                         <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                        <button class="card_icon" onclick="document.getElementById('sal').style.display='block'"><img src="svg/cart-1.svg"><img src="svg/cart-1.svg" ></button>
+                                        <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                         <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                     </div>
                                     <div  class="counter-container " >
-                                                <div id="days2"></div>:&nbsp;&nbsp;
-                                                <div id="hours2"></div>:&nbsp;&nbsp;
-                                                <div id="minutes2"></div>:&nbsp;&nbsp;
-                                                <div id="seconds2"></div>
-                                        </div>
-                            </div>
-
-                            <div class="card_sal">
-                                    <img src="img/book (1).jpg" >
-                                    <h1>كتاب إلكتروني</h1>
-                                    <p>كبريا وهوى(كتاب إلكتروني)</p>
-                                    <strong class="price">$19.99</strong>
-                                    <p>شامل الضريبة</p>
-                                    <div >
-                                        <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                        <button class="card_icon"onclick="document.getElementById('sal').style.display='block'"><img src="svg/cart-1.svg"><img src="svg/cart-1.svg" ></button>
-                                        <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                                <i class="far fa-clock"></i>    D <div id="days2"></div>:
+                                            H<div id="hours2"></div>:
+                                            M  <div id="minutes2"></div>:
+                                            S<div id="seconds2"></div>
                                     </div>
-                                    <div  class="counter-container " >
-                                                <div id="days3"></div>:&nbsp;&nbsp;
-                                                <div id="hours3"></div>:&nbsp;&nbsp;
-                                                <div id="minutes3"></div>:&nbsp;&nbsp;
-                                                <div id="seconds3"></div>
-                                        </div>
                             </div>
 
                             <div class="card_sal">
@@ -412,15 +288,34 @@
                                     <p>شامل الضريبة</p>
                                     <div >
                                         <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                        <button class="card_icon"onclick="document.getElementById('sal').style.display='block'"><img src="svg/cart-1.svg"><img src="svg/cart-1.svg" ></button>
+                                        <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                         <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                     </div>
                                     <div  class="counter-container " >
-                                                <div id="days4"></div>:&nbsp;&nbsp;
-                                                <div id="hours4"></div>:&nbsp;&nbsp;
-                                                <div id="minutes4"></div>:&nbsp;&nbsp;
-                                                <div id="seconds4"></div>
-                                        </div>
+                                                <i class="far fa-clock"></i>    D <div id="days3"></div>:
+                                            H<div id="hours3"></div>:
+                                            M  <div id="minutes3"></div>:
+                                            S<div id="seconds3"></div>
+                                    </div>
+                            </div>
+
+                            <div class="card_sal">
+                                    <img src="img/book (1).jpg" >
+                                    <h1>كتاب إلكتروني</h1>
+                                    <p>كبريا وهوى(كتاب إلكتروني)</p>
+                                    <strong class="price">$19.99</strong>
+                                    <p>شامل الضريبة</p>
+                                    <div >
+                                        <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
+                                        <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
+                                        <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
+                                    </div>
+                                    <div  class="counter-container " >
+                                                <i class="far fa-clock"></i>    D <div id="days4"></div>:
+                                            H<div id="hours4"></div>:
+                                            M  <div id="minutes4"></div>:
+                                            S<div id="seconds4"></div>
+                                    </div>
                             </div>
                             <div class="card_sal">
                                         <img src="img/book (1).jpg" >
@@ -430,14 +325,14 @@
                                         <p>شامل الضريبة</p>
                                         <div >
                                             <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                            <button class="card_icon"onclick="document.getElementById('sal').style.display='block'"><img src="svg/cart-1.svg"><img src="svg/cart-1.svg" ></button>
+                                            <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                             <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                         </div>
                                         <div  class="counter-container " >
-                                                    <div id="days5"></div>:&nbsp;&nbsp;
-                                                    <div id="hours5"></div>:&nbsp;&nbsp;
-                                                    <div id="minutes5"></div>:&nbsp;&nbsp;
-                                                    <div id="seconds5"></div>
+                                                        <i class="far fa-clock"></i>    D <div id="days5"></div>:
+                                                    H<div id="hours5"></div>:
+                                                    M  <div id="minutes5"></div>:
+                                                    S<div id="seconds5"></div>
                                             </div>
                                 </div>
                     </div>

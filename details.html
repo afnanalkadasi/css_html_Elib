@@ -144,42 +144,40 @@
                                               </div>              
                                     </section>
                 <!-- //slider image -->
-                        <section class="slider-container">
-                                        <div class="slider">
-                                          <div class="slides">
-                                            <div id="slides__1" class="slide ">            
-                                                <img src="img/slider_img.webp">
-                                              <a class="slide__prev" href="#slides__4" title="Next"></a>
-                                              <a class="slide__next" href="#slides__2" title="Next"></a>
-                                             
-                                            </div>
-                                            <div id="slides__2" class="slide ">
-                                                  
-                                              <a class="slide__prev" href="#slides__1" title="Prev"></a>
-                                              <a class="slide__next" href="#slides__3" title="Next"></a>
-                                              <img src="img/slider_img2.webp">
-                                            </div>
-                                            <div id="slides__3" class="slide ">
-                                              <a class="slide__prev" href="#slides__2" title="Prev"></a>
-                                              <a class="slide__next" href="#slides__4" title="Next"></a>
-                                              <img src="img/slider_img3.jpg">
-                
-                                            </div>
-                                            <div id="slides__4" class="slide ">
-                                                    <a class="slide__prev" href="#slides__3" title="Prev"></a>
-                                                    <a class="slide__next" href="#slides__1" title="Next"></a>
-                                                    <img src="img/slider_img4.webp">
-                
-                                                  </div>
-                                          </div>
-                                          <div class="slider__nav">
-                                            <a class="slider__navlink" href="#slides__1"></a>
-                                            <a class="slider__navlink" href="#slides__2"></a>
-                                            <a class="slider__navlink" href="#slides__3"></a>
-                                            <a class="slider__navlink" href="#slides__4"></a>
-                                          </div>
-                                        </div>
-                        </section>
+                <section>
+                    <div class="slideshow-container">
+            
+                            <div class="mySlides fade">
+                          
+                              <img src="img/slider_img.webp" style="width:100%">
+                              
+                            </div>
+                            
+                            <div class="mySlides fade">
+                      
+                              <img src="img/slider_img2.webp" style="width:100%">
+                             
+                            </div>
+                            
+                            <div class="mySlides fade">
+                            
+                              <img src="img/slider_img3.jpg" style="width:100%">
+                             
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides_he(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides_he(1)">&#10095;</a>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot" onclick="currentSlide_he(1)"></span> 
+                              <span class="dot" onclick="currentSlide_he(2)"></span> 
+                              <span class="dot" onclick="currentSlide_he(3)"></span> 
+                            </div>
+                            
+                  </section>
                          
 
         <section class="section">
@@ -217,20 +215,20 @@
                                                                  <span class="close_im cursor" onclick="closeModal()">&times;</span>
                                                                  <div class="modal-content_im">
                                                                
-                                                                   <div class="mySlides">
+                                                                   <div class="mySlides_im">
                                                                      <img src="img/book (1).jpg" style="width:100%">
                                                                    </div>
                                                                
-                                                                   <div class="mySlides">
+                                                                   <div class="mySlides_im">
                                                                      <img src="img/book (2).jpg" style="width:100%">
                                                                    </div>
                                                                
-                                                                   <div class="mySlides">
+                                                                   <div class="mySlides_im">
                                                                      <img src="img/book (3).jpg" style="width:100%">
                                                                    </div>
                                                                 
                                                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                                                   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                                                   <a class="next_im" onclick="plusSlides(1)">&#10095;</a>
                                                                
                                                                
                                                                    <div class="column_im">
@@ -406,7 +404,7 @@
                 </p>
         </div>
 </section> 
-<script src="js/main.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
