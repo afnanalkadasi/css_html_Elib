@@ -223,8 +223,8 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: center;
-     color: var(--second-color);
-     background-color: rgba(95, 95, 95, 0.8);
+     color: rgb(69, 86 ,115);
+     background-color: rgba(255, 0, 0, 0.2);
 }
 
 
@@ -724,7 +724,12 @@ color: var(--color-alt);
   }
   .card_sal p{
       color: var(--text-color-light);
+      font-size: 12px;
   }
+  .card_sal span{
+    color: #5f5f5f;
+    font-size: 16px;
+}
   .price {
     color: var(--second-color);
     font-size: 22px;
@@ -1095,41 +1100,45 @@ color: black;
     text-decoration: none;
   }
   /* /////////////////category/// */
+.category1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    direction: ltr;
 
+}
+.cate1 {
+    padding: 15px 20px 10px 0;
+    margin: 5px 0 0 80px;
+    justify-content: center;
+    color: black;
+    width: 200px;
+   
+  }
+
+  .cate1  #searchbar{
+    padding:10px;
+    background-color: var(--container-color);
+    border: 1px solid black;
+    
+}
+
+.book_card{
+display: list-item;	
+}
+.im_book{
+    height: 170px;
+}
   .cate-container{
     direction: ltr;
     display: grid;
     grid-template-columns: auto auto auto auto auto ;
-    grid-gap: 15px;
-    padding: 10px;
+    grid-gap: 5px;
+    padding: 0px;
     
   }
- 
-  
-  .cate1 {
-    padding: 15px 20px 10px 0;
-    margin: 5px 0 10px 0;
-    grid-column: 1 / 5;
-    justify-content: center;
-    color: black;
-    background-color: var(--container-color);
-   
-  }
-  .cate1 select{
-      background-color: var(--container-color);
-      border:1px #222222 solid;
-      height: 40px;
-      font-size: 15px;
-      margin-top: -8px;
-      width: 250px;
-      margin-left: 50px;
-      padding: 0;
-  }
-  
-  .cate1 span{
-      margin-right: 750px;
-      border-radius: 0;
-  }
+
   .cate2{
     padding: 15px 20px 10px 0;
     margin: 5px 0 10px 0;
@@ -1139,41 +1148,55 @@ color: black;
     color: green;
     justify-content: center;
     height: 54px;
+    width: 20%;
   }
   .cate2 img{
       width: 20px;
       height: 20px;
   }
-/* /////////////////cat */
+  .cate3{
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+  }
+  .cate_1{
 
-#myInput {
-    background-image: url('C:/xampp/htdocs/week3/elib/svg/search.svg');
-    background-position: 10px 12px;
-    background-repeat: no-repeat;
-    width: 100%;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
-    margin-bottom: 12px;
   }
-  
-  #myUL {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  .checked {
+    color: yellow;
   }
-  
-  #myUL li a {
-    border: 1px solid #ddd;
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    display: block
-  }
-  
-  #myUL li a:hover:not(.header) {
-    background-color: #eee;
-  }
+.fa-star{
+    color: var(--text-color-light);
+}
+.cate21{
+    height: 50px;
+    width: 92%;
+    padding: 7px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--container-color);
+    grid-column: 1/5;
+    margin: 5px 0px 5px 50px;
+    border-radius: var(--mb-0-5);
+    background-color: rgb(78, 78, 212);
+}
+.cate23{
+    height: 10px;
+    width: 92%;
+    grid-column: 1/5;
+    margin: 5px 0px 5px 50px;
+    border-radius: var(--mb-0-5);
+    background-color: rgb(193, 193, 196);
+
+}
+.cate25{
+    height: 50px;
+    width: 92%;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    grid-column: 1/5;
+    margin: 5px 0px 5px 50px;
+    border:none;
+}
