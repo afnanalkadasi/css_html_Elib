@@ -140,24 +140,41 @@ html{
     color: var(--text-color-light);
 }
 .fa-search{
-    padding: 10px;
+    padding: 5px 20px;
     font-size: var(--h2-font-size);
     color: var(--text-color-light);
 }
 .icon_shop{
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--color-lighter);  
-    transform: rotateY(-180deg); 
+   
 }
 .icon_shop img{
-    transform: rotateY(-180deg);
+    transform: rotateY(-180deg); 
 } 
+.icon_shop a{
+    text-decoration: none;
+    transform: rotateY(-180deg); 
+}
+.span_c{
+ 
+    background-color: red;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: var(--container-color);
+    font-size: 15px;
+    margin-bottom: 20px;
 
+    overflow: hidden;
+    text-align: center;
+
+}
    /* login */
      
 .container {
@@ -936,8 +953,8 @@ padding-right: .5rem;
     justify-content: space-between;
     align-items: center;
     direction: ltr;
-
 }
+
 .cate1 {
     padding: 15px 20px 10px 0;
     margin: 5px 0 0 80px;
@@ -999,12 +1016,11 @@ display: list-item;
     font-size: 20px;
     
 }
-
 .fa-star{
-    color: var(--text-color-light);
+    color: var(--color-lighter);
 }
-.checked {
-    color: yellow;
+.check {
+    color: rgb(255, 217, 0);
   }
 .cate21{
     height: 50px;

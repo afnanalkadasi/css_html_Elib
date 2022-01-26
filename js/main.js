@@ -277,3 +277,5 @@ function openModal() {
             paragraphEN.style.display = 'block';
         }
     }
+
+    /////////////////
