@@ -7,7 +7,6 @@
     <title>E-libirty</title>
     <script src="https://kit.fontawesome.com/53e9ef6681.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' type='text/css' media='all' href='css/style.css'>
-    <!-- <link rel='stylesheet' type='text/css' media='all' href='css/style2.css'> -->
 
 </head>
 <body dir="rtl" class="grid-container" id="index">
@@ -22,7 +21,9 @@
                             <li class="nav_item"><a href="#"class="nav_link " ><img src="svg/svgexport-5.svg" class="nav_icon">المساعدة</a></li>
                             <li class="nav_item"><a href="#"class="nav_link " ><img src="svg/svgexport-11.svg" class="nav_icon">سياسية الخصوصية</a></li>
                             <li class="nav_item"><a href="#"class="nav_link " ><img src="svg/svgexport-12.svg" class="nav_icon"> اليمن</a></li>
-                            <li class="nav_item"><a href="#"class="nav_link " ><img src="svg/svgexport-14.svg" class="nav_icon">English</a></li>
+                           
+                            <li class="nav_item" onclick="togglestyle()" id="en"  ><a href="#"class="nav_link "  ><img src="svg/svgexport-14.svg" class="nav_icon">English</a></li>
+                            <li class="nav_item" onclick="togglestyle()" id="ar"  style="display: none;"><a href="#"class="nav_link " ><img src="svg/svgexport-14.svg" class="nav_icon">عربي</a></li>
                         </ul> 
                     </div>
                     <div class="header-2">
@@ -136,7 +137,7 @@
                  
                 </div>
                 
-                <a class="prev" onclick="plusSlides_he(-1)">&#10094;</a>
+                <a class="prev" onclick="plusSlides_he(+1)">&#10094;</a>
                 <a class="next" onclick="plusSlides_he(1)">&#10095;</a>
                 
                 </div>
@@ -151,7 +152,11 @@
       </section> 
 
         <section class="section_dep">
-                <h2> تصفح حسب القسم</h2>
+                <div class="dep_row1">
+                                <h2> تصفح حسب القسم </h2>
+                                <a href="category.html" > عرض المزيد</a>
+                </div>
+                
                 <div class="row">
                         <div class="column">
                           <div class="card">
@@ -227,13 +232,13 @@
         <img class="myImg" src="img/55.webp"  onclick="image(event)" style="width:100%; height: 150px;" />
 
         <!-- The Modal -->
-        <div id="myModal1" class="modal">
+        <div id="myModal1" class="modal_sh_ho">
 
         <!-- The Close Button -->
         <span class="close">&times;</span>
 
         <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
+        <img class="modal-content_sh" id="img01">
 
         </div>
 </div>
@@ -241,13 +246,17 @@
  
    <!-- //show books -->
         <section class="section1">
-                    <h2 class="section-title">العروض الحالية</h2>     
+                        <div class="dep_row1">
+                                        <h2 class="section-title">العروض الحالية</h2>   
+                                        <a href="category.html" > عرض المزيد</a>
+                        </div>
+                      
                     <div class="row ">
                             <div class="card_sal">
                                   <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a>  
-                                    <h1>كتاب إلكتروني</h1>
+                                   <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                     <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                    <strong class="price">$19.99</strong>
+                                     <strong class="price">19.39ر.س.</strong>
                                     <p>شامل الضريبة</p>
                                     <div >
                                         <button  class="card_icon2" ><img src="svg/svgexport-54.svg"></button>
@@ -262,10 +271,10 @@
                                     </div>
                             </div>
                             <div class="card_sal">
-                                    <img class="im_book" src="img/book (1).jpg" >
-                                    <h1>كتاب إلكتروني</h1>
+                                     <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                   <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                     <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                    <strong class="price">$19.99</strong>
+                                     <strong class="price">19.39ر.س.</strong>
                                     <p>شامل الضريبة</p>
                                     <div >
                                         <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
@@ -281,10 +290,10 @@
                             </div>
 
                             <div class="card_sal">
-                                    <img class="im_book" src="img/book (1).jpg" >
-                                    <h1>كتاب إلكتروني</h1>
+                                    <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                   <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                     <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                    <strong class="price">$19.99</strong>
+                                    <strong class="price">19.39ر.س.</strong>
                                     <p>شامل الضريبة</p>
                                     <div >
                                         <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
@@ -300,10 +309,10 @@
                             </div>
 
                             <div class="card_sal">
-                                    <img class="im_book" src="img/book (1).jpg" >
-                                    <h1>كتاب إلكتروني</h1>
+                                    <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                   <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                     <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                    <strong class="price">$19.99</strong>
+                                     <strong class="price">19.39ر.س.</strong>
                                     <p>شامل الضريبة</p>
                                     <div >
                                         <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
@@ -318,10 +327,10 @@
                                     </div>
                             </div>
                             <div class="card_sal">
-                                        <img class="im_book" src="img/book (1).jpg" >
-                                        <h1>كتاب إلكتروني</h1>
+                                        <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                       <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                         <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                        <strong class="price">$19.99</strong>
+                                         <strong class="price">19.39ر.س.</strong>
                                         <p>شامل الضريبة</p>
                                         <div >
                                             <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
@@ -341,72 +350,75 @@
      
      
       <section class="section">
-                 <h3 class="section-title"> الكتب الدينية </h3>
-                           
+               
+                 <div class="dep_row1">
+                                <h3 class="section-title"> الكتب الدينية </h3>  
+                                <a href="category.html" > عرض المزيد</a>
+                </div>
                                 <div class="row ">
                                         <div class="card_sal">
-                                                <img class="im_book" src="img/book (1).jpg" >
-                                                <h1>كتاب إلكتروني</h1>
+                                                <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                               <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                 <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                <strong class="price">$19.99</strong>
+                                                 <strong class="price">19.39ر.س.</strong>
                                                 <p>شامل الضريبة</p>
                                                 <div >
                                                     <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                    <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                       <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                     <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                 </div>
                                         </div>
 
                                         <div class="card_sal">
-                                                <img class="im_book" src="img/book (1).jpg" >
-                                                <h1>كتاب إلكتروني</h1>
+                                                <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                               <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                 <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                <strong class="price">$19.99</strong>
+                                                 <strong class="price">19.39ر.س.</strong>
                                                 <p>شامل الضريبة</p>
                                                 <div >
                                                     <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                    <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                       <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                     <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                 </div>
                                    
                                         </div>
             
                                         <div class="card_sal">
-                                                <img class="im_book" src="img/book (1).jpg" >
-                                                <h1>كتاب إلكتروني</h1>
+                                                <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                               <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                 <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                <strong class="price">$19.99</strong>
+                                                 <strong class="price">19.39ر.س.</strong>
                                                 <p>شامل الضريبة</p>
                                                 <div >
                                                     <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                    <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                       <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                     <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                 </div>
                                      
                                         </div>
                                         <div class="card_sal">
-                                                <img class="im_book" src="img/book (1).jpg" >
-                                                <h1>كتاب إلكتروني</h1>
+                                                <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                               <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                 <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                <strong class="price">$19.99</strong>
+                                                 <strong class="price">19.39ر.س.</strong>
                                                 <p>شامل الضريبة</p>
                                                 <div >
                                                     <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                    <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                       <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                     <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                 </div>
                              
                                         </div>
             
                                         <div class="card_sal">
-                                                <img class="im_book" src="img/book (1).jpg" >
-                                                <h1>كتاب إلكتروني</h1>
+                                                <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                               <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                 <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                <strong class="price">$19.99</strong>
+                                                 <strong class="price">19.39ر.س.</strong>
                                                 <p>شامل الضريبة</p>
                                                 <div >
                                                     <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                    <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                       <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                     <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                 </div>
                            
@@ -414,72 +426,75 @@
                                 </div>
 </section>
 <section class="section">
-                <h3 class="section-title"> الكتب التاريخية </h3>
-                          
+              
+                <div class="dep_row1">
+                                <h3 class="section-title"> الكتب التاريخية </h3> 
+                                <a href="category.html" > عرض المزيد</a>
+                </div>       
                                <div class="row ">
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                                        </div>
 
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                                   
                                        </div>
            
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                                     
                                        </div>
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                             
                                        </div>
            
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                           
@@ -487,72 +502,74 @@
                                </div>
                                              </section>     
                                              <section class="section">
-                                                        <h3 class="section-title">  السياسية </h3>
-                                                                  
+                                                        <div class="dep_row1">
+                                                                        <h3 class="section-title">  السياسية </h3>
+                                                                        <a href="category.html" > عرض المزيد</a>
+                                                        </div>               
                                                                        <div class="row ">
                                                                                <div class="card_sal">
-                                                                                       <img class="im_book" src="img/book (1).jpg" >
-                                                                                       <h1>كتاب إلكتروني</h1>
+                                                                                       <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                                                                      <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                                                        <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                                                       <strong class="price">$19.99</strong>
+                                                                                        <strong class="price">19.39ر.س.</strong>
                                                                                        <p>شامل الضريبة</p>
                                                                                        <div >
                                                                                            <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                                                           <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                                                              <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                                                            <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                                                        </div>
                                                                                </div>
                                         
                                                                                <div class="card_sal">
-                                                                                       <img class="im_book" src="img/book (1).jpg" >
-                                                                                       <h1>كتاب إلكتروني</h1>
+                                                                                       <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                                                                      <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                                                        <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                                                       <strong class="price">$19.99</strong>
+                                                                                        <strong class="price">19.39ر.س.</strong>
                                                                                        <p>شامل الضريبة</p>
                                                                                        <div >
                                                                                            <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                                                           <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                                                              <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                                                            <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                                                        </div>
                                                                           
                                                                                </div>
                                                    
                                                                                <div class="card_sal">
-                                                                                       <img class="im_book" src="img/book (1).jpg" >
-                                                                                       <h1>كتاب إلكتروني</h1>
+                                                                                       <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                                                                      <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                                                        <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                                                       <strong class="price">$19.99</strong>
+                                                                                        <strong class="price">19.39ر.س.</strong>
                                                                                        <p>شامل الضريبة</p>
                                                                                        <div >
                                                                                            <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                                                           <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                                                              <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                                                            <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                                                        </div>
                                                                             
                                                                                </div>
                                                                                <div class="card_sal">
-                                                                                       <img class="im_book" src="img/book (1).jpg" >
-                                                                                       <h1>كتاب إلكتروني</h1>
+                                                                                       <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                                                                      <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                                                        <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                                                       <strong class="price">$19.99</strong>
+                                                                                        <strong class="price">19.39ر.س.</strong>
                                                                                        <p>شامل الضريبة</p>
                                                                                        <div >
                                                                                            <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                                                           <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                                                              <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                                                            <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                                                        </div>
                                                                     
                                                                                </div>
                                                    
                                                                                <div class="card_sal">
-                                                                                       <img class="im_book" src="img/book (1).jpg" >
-                                                                                       <h1>كتاب إلكتروني</h1>
+                                                                                       <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                                                                      <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                                                        <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                                                       <strong class="price">$19.99</strong>
+                                                                                        <strong class="price">19.39ر.س.</strong>
                                                                                        <p>شامل الضريبة</p>
                                                                                        <div >
                                                                                            <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                                                           <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                                                              <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                                                            <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                                                        </div>
                                                                   
@@ -560,72 +577,74 @@
                                                                        </div>
                      </section>   
                      <section class="section">
-                                <h3 class="section-title">  الاقتصاد </h3>
-                                          
+                                <div class="dep_row1">
+                                                <h3 class="section-title">  الاقتصاد </h3>
+                                                <a href="category.html" > عرض المزيد</a>
+                                </div>                 
                                                <div class="row ">
                                                        <div class="card_sal">
-                                                               <img class="im_book" src="img/book (1).jpg" >
-                                                               <h1>كتاب إلكتروني</h1>
+                                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                               <strong class="price">$19.99</strong>
+                                                                <strong class="price">19.39ر.س.</strong>
                                                                <p>شامل الضريبة</p>
                                                                <div >
                                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                                </div>
                                                        </div>
                 
                                                        <div class="card_sal">
-                                                               <img class="im_book" src="img/book (1).jpg" >
-                                                               <h1>كتاب إلكتروني</h1>
+                                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                               <strong class="price">$19.99</strong>
+                                                                <strong class="price">19.39ر.س.</strong>
                                                                <p>شامل الضريبة</p>
                                                                <div >
                                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                                </div>
                                                   
                                                        </div>
                            
                                                        <div class="card_sal">
-                                                               <img class="im_book" src="img/book (1).jpg" >
-                                                               <h1>كتاب إلكتروني</h1>
+                                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                               <strong class="price">$19.99</strong>
+                                                                <strong class="price">19.39ر.س.</strong>
                                                                <p>شامل الضريبة</p>
                                                                <div >
                                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                                </div>
                                                     
                                                        </div>
                                                        <div class="card_sal">
-                                                               <img class="im_book" src="img/book (1).jpg" >
-                                                               <h1>كتاب إلكتروني</h1>
+                                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                               <strong class="price">$19.99</strong>
+                                                                <strong class="price">19.39ر.س.</strong>
                                                                <p>شامل الضريبة</p>
                                                                <div >
                                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                                </div>
                                             
                                                        </div>
                            
                                                        <div class="card_sal">
-                                                               <img class="im_book" src="img/book (1).jpg" >
-                                                               <h1>كتاب إلكتروني</h1>
+                                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                                               <strong class="price">$19.99</strong>
+                                                                <strong class="price">19.39ر.س.</strong>
                                                                <p>شامل الضريبة</p>
                                                                <div >
                                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                                </div>
                                           
@@ -633,145 +652,150 @@
                                                </div>
 </section>          
 <section class="section">
-                <h3 class="section-title">  الطبخ </h3>
-                          
+               
+                <div class="dep_row1">
+                                <h3 class="section-title">  الطبخ </h3>
+                        <a href="category.html" > عرض المزيد</a>
+                </div>           
                                <div class="row ">
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                                        </div>
 
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                                   
                                        </div>
            
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                                     
                                        </div>
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                             
                                        </div>
            
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                           
                                        </div>
                                </div>
 </section>  
-<section class="section">
-                <h3 class="section-title">  أفضل الروايات الرومانسية </h3>
-                          
+<section class="section">    
+                <div class="dep_row1">
+                                <h3 class="section-title">  أفضل الروايات الرومانسية </h3>
+                        <a href="category.html" > عرض المزيد</a>
+                </div>          
                                <div class="row ">
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                                        </div>
 
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                                   
                                        </div>
            
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                                     
                                        </div>
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                             
                                        </div>
            
                                        <div class="card_sal">
-                                               <img class="im_book" src="img/book (1).jpg" >
-                                               <h1>كتاب إلكتروني</h1>
+                                               <a href="details.html"><img class="im_book" src="img/book (1).jpg" ></a> 
+                                              <div class="card_im" > <img src="svg/svgexport-990.svg" width="20px" height="20px" ><h2 >كتاب إلكتروني</h2></div>
                                                <span>كبريا وهوى(كتاب إلكتروني)</span>
-                                               <strong class="price">$19.99</strong>
+                                                <strong class="price">19.39ر.س.</strong>
                                                <p>شامل الضريبة</p>
                                                <div >
                                                    <button class="card_icon2"><img src="svg/svgexport-54.svg"></button>
-                                                   <button class="card_icon"><img src="svg/cart-1.svg" ></button>
+                                                      <a href="sal.html"> <button class="card_icon"><img  src="svg/cart-1.svg" ></button></a> 
                                                    <button class="card_icon2"><img src="svg/svgexport-55.svg" ></button>
                                                </div>
                           
@@ -877,12 +901,12 @@
 
         <div class="fact-col"> 
                 <div class="footer_im">                                             
-                              <span class="foot-img">  <img src="svg/svgexport-65.svg" ></span>
-                              <span  class="foot-img"> <img src="svg/svgexport-66.svg" ></span>
-                              <span class="foot-img"> <img src="svg/svgexport-67.svg" ></span>
-                              <span class="foot-img"> <img src="svg/svgexport-68.svg" ></span>
-                              <span class="foot-img"> <img src="svg/svgexport-69.svg" ></span>
-                              <span class="foot-img">  <img src="svg/svgexport-70.svg" ></span>              
+                              <img src="svg/svgexport-65.svg" >
+                               <img src="svg/svgexport-66.svg" >
+                                <img src="svg/svgexport-67.svg" >
+                              <img src="svg/svgexport-68.svg" >
+                             <img src="svg/svgexport-69.svg" >
+                              <img src="svg/svgexport-70.svg" >             
                 </div>
         </div>
         <div class="fact-col">

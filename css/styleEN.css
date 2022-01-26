@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Tajawal:wght@200&display=swap');
 :root{
     --header-height:2rem;
     --hue-color:355; 
@@ -12,7 +11,7 @@
     --input-color:hsl(var(--hue-color), 70%, 96%);
     --body-color:hsl(var(--hue-color), 60%, 99%);
     --container-color:#fff;
-    --body-font:'Tajawal', sans-serif;
+    --body-font: 'Times New Roman', Times, serif;
     --log_font:'Mea Culpa', cursive;
     --big-font-size:2rem;
     --h1-font-size:1.5rem;
@@ -47,15 +46,15 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;   
-    direction: rtl;   
+    direction: ltr;   
     font-family:  var(--body-font);                                 
   }
 html{
     scroll-behavior: smooth;
-   
   }
 .grid-container {
     display: grid;
+    direction: ltr; 
     grid: 1 / auto auto auto auto auto;
     grid-gap: 0px;
     margin: 0;
@@ -67,42 +66,48 @@ html{
     flex-direction: column;
     margin: 0;
     padding: 0;
+    direction: ltr;
 }
-.header-1{
+ .header-1{
     background-color: var(--color-lighter);
+    direction: ltr;
   }
 .nav_list{
       padding: 5px 0 ;
       color:black;
+      display: flex;
+      flex-direction: row;
       list-style: none; 
       width: 100%;
-
+direction: ltr;
+justify-content: space-between;
   }
-.nav_list .nav_item {
-    margin: 0 -1px 0 15px;
+
+.nav_item {
     font-size: var(--h3-font-size);
-    color: var(--container-color);
     display: inline;
+    text-align: left;
     padding: 5px;
     text-decoration: none;
-    border-right: 1px solid black;
-    
+    border-left: 1px solid black;
 }
-.nav_list .nav_item .nav_link {
+  
+.nav_link {
     text-decoration: none;
     color: black;
     margin: 5px 11px;
-    text-align: center;
-   
+    text-align: left;  
 }
 .nav_link:hover{
     color: var(--first-color);
 }
 .nav_icon{
-    width: 22px;
+    width: 23px;
     height: 15px;
     margin: 0 10px;
-}
+    text-align: left;
+
+} 
 
 .header-2{
     background: var(--container-color);
@@ -421,7 +426,7 @@ width: 100%;}
 }
 
 .next {
-  right: 82rem;
+  left: 82rem;
   border-radius: 3px 0 0 3px;
 }
 
@@ -485,9 +490,10 @@ color: var(--color-alt);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 25px;
 }
 .dep_row1 a{
-    margin: 25px;
+   
     color: blue;
     text-decoration: none;
 }

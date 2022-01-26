@@ -45,10 +45,4 @@ function updateProgressbar() {
   progress.style.width =
     ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
 }
-
-const button_s = document.getElementById("sub");
-button_s.addEventListener("click", () => {
-  alert("تم بنجاح");
-});
-
 /////////////////////

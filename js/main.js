@@ -19,8 +19,10 @@ window.onclick = function(event) {
   }
 }
 //////////////slider head
-var slideIndex2 = 0;
-showSlides_he();
+
+var slideIndex2 = 1;
+showSlides_he(slideIndex2);
+
 function plusSlides_he(n) {
   showSlides_he(slideIndex2 += n);
 }
@@ -29,21 +31,23 @@ function currentSlide_he(n) {
   showSlides_he(slideIndex2 = n);
 }
 
-function showSlides_he() {
+function showSlides_he(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex2 = 1}    
+  if (n < 1) {slideIndex2 = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+      slides[i].style.display = "none";  
   }
   slideIndex2++;
   if (slideIndex2 > slides.length) {slideIndex2 = 1}    
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex2-1].style.display = "block";  
   dots[slideIndex2-1].className += " active";
-  setTimeout(showSlides_he, 15000); // Change image every 2 seconds
+  setTimeout(showSlides_he, 10000);
 }
 // show image in home
 var modal3 = document.getElementById("myModal1");
@@ -224,34 +228,52 @@ function openModal() {
   
   function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("mySlides_im");
-    var dots = document.getElementsByClassName("demo");
+    var slides_d = document.getElementsByClassName("mySlides_im");
+    var dots_d = document.getElementsByClassName("demo");
   
-    if (n > slides.length) {slideIndex3= 1}
-    if (n < 1) {slideIndex3 = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    if (n > slides_d.length) {slideIndex3= 1}
+    if (n < 1) {slideIndex3 = slides_d.length}
+    for (i = 0; i < slides_d.length; i++) {
+      slides_d[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+    for (i = 0; i < dots_d.length; i++) {
+      dots_d[i].className = dots_d[i].className.replace(" active", "");
     }
-    slides[slideIndex3-1].style.display = "block";
-    dots[slideIndex3-1].className += " active";
+    slides_d[slideIndex3-1].style.display = "block";
+    dots_d[slideIndex3-1].className += " active";
   }
             //////////read more////////
       function myFunction() {
-        var dots = document.getElementById("dots");
+        var dots_m = document.getElementById("dots");
         var moreText = document.getElementById("more");
         var btnText = document.getElementById("myBtn");
       
-        if (dots.style.display === "none") {
-          dots.style.display = "inline";
+        if (dots_m.style.display === "none") {
+          dots_m.style.display = "inline";
           btnText.innerHTML = "اقرا المزيد"; 
           moreText.style.display = "none";
         } else {
-          dots.style.display = "none";
+          dots_m.style.display = "none";
           btnText.innerHTML = "اقرا اقل"; 
           moreText.style.display = "inline";
         }
       }
-/////////////////cate
+
+      //////////trenslation
+      function togglestyle() {
+        var styles = document.getElementsByTagName('link')[0];
+        var paragraphEN = document.getElementById('en');
+        var paragraphAR = document.getElementById('ar');
+
+        if (styles.getAttribute('href') == 'css/style.css') {
+            styles.setAttribute('href', 'css/styleEN.css');
+            paragraphEN.style.display = 'none';
+            paragraphAR.style.display = 'block';
+
+        }
+        else {
+            styles.setAttribute('href', 'css/style.css');
+            paragraphAR.style.display = 'none';
+            paragraphEN.style.display = 'block';
+        }
+    }

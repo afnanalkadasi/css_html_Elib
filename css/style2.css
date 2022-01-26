@@ -1,4 +1,12 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Tajawal:wght@200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;   
+  direction: rtl;   
+  font-family:  var(--body-font);                                 
+}
 ul.breadcrumb {
   padding: 20px 16px;
   list-style: none;
@@ -82,8 +90,7 @@ ul.breadcrumb li a:hover {
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
-  max-width: 1200px;
+  width: 46%;
   justify-content: center;
 }
 
@@ -132,13 +139,13 @@ ul.breadcrumb li a:hover {
 
 /* Position the "next button" to the right */
 .next_im {
-  right: 72rem;
+  right: 36rem;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
-.next:hover {
+.next_im:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -166,5 +173,38 @@ img.hover-shadow {
 }
 .div2{
     border: none;
+}
+/* ////////div */
+.section_div{
+  margin: 10px 0;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-top: 1px  solid #ccc;
+  border-bottom: 1px  solid #ccc;
+
+}
+/* /////////table */
+table {
+ 
+  width: 100%;
+  margin-right: 4rem;
+
+}
+.section1 h2{
+margin-right: 2rem;
+}
+ td {
+  text-align: right;
+  padding: 18px 0;
+  border-bottom:2px solid #f2f2f2;
+}
+.btn_to{
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px 15px;
+  font-size: 18px;
+  color: blue;
+  text-align: left;
 }
 
