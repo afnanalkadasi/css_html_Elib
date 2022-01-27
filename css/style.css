@@ -164,11 +164,11 @@ html{
 .span_c{
  
     background-color: red;
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     color: var(--container-color);
-    font-size: 15px;
+    font-size: 13px;
     margin-bottom: 20px;
 
     overflow: hidden;
@@ -507,6 +507,7 @@ color: var(--color-alt);
     margin: 25px;
     color: blue;
     text-decoration: none;
+    cursor: pointer;
 }
     .div3,
     .div1{
@@ -526,7 +527,24 @@ color: var(--color-alt);
 color: var(--text-color-light);
 }
 .ch_div2_l{
-    float: left;
+    text-align: left;
+}
+.ch_div2_l a{
+    color: blue;
+    font-weight: bold;
+}
+.ch_div2_b{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.it_r {
+font-size: 20px;
+padding: 10px;
+}
+
+.it_l p{
+    color: var(--color-lighter);
 }
 .column {
     width: 25%;
@@ -534,6 +552,9 @@ color: var(--text-color-light);
     margin: 10px 10px;
     border-radius: 10px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .column a{
+      text-decoration: none;
   }
   .card {
       width: 100%;
@@ -809,7 +830,6 @@ footer{
 }
 
 .footer_social{
-    font-size: 1.25rem;
     margin-right: var(--mb-1);
     text-decoration: none;
 }
@@ -1001,20 +1021,42 @@ display: list-item;
       
   }
   .cate3{
+      margin-top: 5px;
       display: flex;
       flex-direction: column;
-     
-      margin-right: 20px;
-
+     max-width: 400px;
   }
   .c3_item{
       margin: 0;
-      padding: 0;
+      padding:10px 20px;
+      width: 280px;
+      text-align: right;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #edf6ff;
+      border-top: 1px solid var(--color-lighter);
   }
 .cate_right{
     background-color: green;
+    padding: 5px 10px;
+}
+.cate_right span{
+    color: white;
     font-size: 20px;
-    
+}
+.min_span{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 4px 1px;
+    overflow: hidden;
 }
 .fa-star{
     color: var(--color-lighter);

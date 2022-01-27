@@ -185,26 +185,57 @@ img.hover-shadow {
 }
 /* /////////table */
 table {
- 
+  border-collapse: collapse;
   width: 100%;
   margin-right: 4rem;
 
 }
-.section1 h2{
+.section-title{
 margin-right: 2rem;
+margin-left: 1rem;
+font-weight: bold;
 }
- td {
+.section1 td {
   text-align: right;
   padding: 18px 0;
-  border-bottom:2px solid #f2f2f2;
+  border-bottom:2px solid #d4d4d4;
+
 }
 .btn_to{
   border: 1px solid #f2f2f2;
-  border-radius: 5px;
+  border-radius: 25px;
   margin: 10px;
   padding: 5px 15px;
-  font-size: 18px;
+  font-size: 16px;
   color: blue;
   text-align: left;
 }
+/* ////////////////table2 */
+.tab2{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.butn_tab{
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+padding: 10px;
+border: none;
+border-radius: 5px;
+}
+.section2 tr:nth-last-child(even){
+  background-color: #f2f2f2;
 
+}
+.section2  td {
+  text-align: right;
+  padding: 18px 0;
+  color: #a3a3a3;
+}
+.section2  td h3 {
+  font-weight: bold;
+  color: black;
+  
+}

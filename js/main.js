@@ -69,7 +69,7 @@ span2.onclick = function () {
 
 // counter-container
 const countdown=()=>{
-    const upperDate = new Date('Jan 21,2022 00:00:00').getTime();
+    const upperDate = new Date('Jan 28,2022 00:00:00').getTime();
     const currentDate = new Date().getTime();
     const diffDate = upperDate - currentDate;
 
@@ -97,7 +97,7 @@ setInterval(countdown,1000);
 
 // counter-container2
 const countdown2=()=>{
-    const upperDate = new Date('Jan 22,2022 00:00:00').getTime();
+    const upperDate = new Date('Jan 29,2022 00:00:00').getTime();
     const currentDate = new Date().getTime();
     const diffDate = upperDate - currentDate;
 
@@ -125,7 +125,7 @@ setInterval(countdown2,1000);
 
 // counter-container3
 const countdown3=()=>{
-    const upperDate = new Date('Jan 24,2022 00:00:00').getTime();
+    const upperDate = new Date('Jan 30,2022 00:00:00').getTime();
     const currentDate = new Date().getTime();
     const diffDate = upperDate - currentDate;
 
@@ -152,7 +152,7 @@ const countdown3=()=>{
 setInterval(countdown3,1000);
 // counter-container4
 const countdown4=()=>{
-    const upperDate = new Date('Jan 27,2022 00:00:00').getTime();
+    const upperDate = new Date('Jan 31,2022 00:00:00').getTime();
     const currentDate = new Date().getTime();
     const diffDate = upperDate - currentDate;
 
@@ -179,7 +179,7 @@ const countdown4=()=>{
 setInterval(countdown4,1000);
 // counter-container5
 const countdown5=()=>{
-    const upperDate = new Date('Jan 29,2022 00:00:00').getTime();
+    const upperDate = new Date('Jan 31,2022 00:00:00').getTime();
     const currentDate = new Date().getTime();
     const diffDate = upperDate - currentDate;
 
