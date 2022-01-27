@@ -49,6 +49,7 @@ function showSlides_he(n) {
   dots[slideIndex2-1].className += " active";
   setTimeout(showSlides_he, 10000);
 }
+
 // show image in home
 var modal3 = document.getElementById("myModal1");
 
@@ -210,13 +211,10 @@ setInterval(countdown5,1000);
 function openModal() {
     document.getElementById("myModal_im").style.display = "block";
   }
-  
   function closeModal() {
     document.getElementById("myModal_im").style.display = "none";
   }
-  
   var slideIndex3 = 1;
-  showSlides(slideIndex3);
   
   function plusSlides(n) {
     showSlides(slideIndex3 += n);
