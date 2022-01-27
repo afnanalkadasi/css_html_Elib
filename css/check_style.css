@@ -123,7 +123,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  
   .btn,.btn_scc {
     padding: 0.75rem;
     display: block;
