@@ -32,7 +32,7 @@
                 </div>
                    <div> 
                         <form action="" class="search-form">
-                                <input type="search" name="" placeholder="البحث" id="search-box" >
+                                <input type="search" id="searchbar" onkeyup="search_ele()" name="search" placeholder="البحث"  >
                                 <i class="fas fa-search"></i>
                             </form>
                    </div>
@@ -161,9 +161,12 @@
                         </ul>
                    <div class="category1">
                         <div class="cate1">
-                                <input id="searchbar" onkeyup="search_ele()" type="text"
-                                name="search" placeholder="الرجاء الاختيار">
-                              
+                           <span> الترتيب حسب: </span> 
+                               <select>
+                                   <option>الرجاء الاختيار</option>
+                                   <option>كتب دينية</option>
+                                   <option>كتب اقتصادية</option>
+                                   </select>
                         </div>
                           
                             <div class="cate2 book_card">
@@ -670,25 +673,25 @@
             <div class="footer_socials">                                
     
                                     <a href="#" class="footer_social" target="_blank">
-                                            <img src="svg/svgexport-58.svg" class="nav_icon">
+                                            <img src="svg/svgexport-58.svg" class="nav_icons">
                                         </a>
                                         <a href="#" class="footer_social" target="_blank">
-                                                <img src="svg/svgexport-59.svg" class="nav_icon">
+                                                <img src="svg/svgexport-59.svg" class="nav_icons">
                                         </a>
                                         <a href="#" class="footer_social" target="_blank">
-                                                <img src="svg/svgexport-60.svg" class="nav_icon">
+                                                <img src="svg/svgexport-60.svg" class="nav_icons">
                                         </a>
                                         <a href="#" class="footer_social" target="_blank">
-                                                <img src="svg/svgexport-61.svg" class="nav_icon">
+                                                <img src="svg/svgexport-61.svg" class="nav_icons">
                                         </a>
                                         <a href="#" class="footer_social" target="_blank">
-                                                <img src="svg/svgexport-62.svg" class="nav_icon">
+                                                <img src="svg/svgexport-62.svg" class="nav_icons">
                                         </a>
                                         <a href="#" class="footer_social" target="_blank">
-                                                <img src="svg/svgexport-63.svg" class="nav_icon">
+                                                <img src="svg/svgexport-63.svg" class="nav_icons">
                                         </a>
                                         <a href="#" class="footer_social" target="_blank">
-                                                <img src="svg/svgexport-64.svg" class="nav_icon">
+                                                <img src="svg/svgexport-64.svg" class="nav_icons">
                                         </a>
                             
             </div>
@@ -715,7 +718,7 @@
                             .جميع الحقوق محفوظة لمكتبة جرير © 2015. س.ت. 1010032264. اونلاين س.ت. 1010654213
             </p>
     </div>
-</section>
+</section> 
 <script src="js/main.js" ></script>
  <script src="js/cate.js" ></script>
  

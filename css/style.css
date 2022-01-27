@@ -101,7 +101,7 @@ html{
 .nav_icon{
     width: 22px;
     height: 15px;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .header-2{
@@ -138,7 +138,9 @@ html{
     background: var(--color-lighter);
     text-transform: none;
     color: var(--text-color-light);
+    border-radius: var(--mb-1-5);
 }
+
 .fa-search{
     padding: 5px 20px;
     font-size: var(--h2-font-size);
@@ -759,14 +761,14 @@ padding: 10px;
 
 footer{
     color: whitesmoke;
-    background-color: black;
+    background-color: rgb(58, 58, 58);
     padding: 40px 50px;
     height: 100%;
     width: 100%;
   
 }
 .fact-col{
-    flex-basis: 31%;
+    flex-basis: 38%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: right;
@@ -796,13 +798,18 @@ footer{
     width: auto; 
 }
 .fo_form{
-    background-color: #222222;
+    background-color: #5e5e5e;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 30px;
     padding: 10px;
     border-radius: .5rem;
+}
+.nav_icons{
+    width: 32px;
+    height: 30px;
+    margin: 0 5px;
 }
 .input_em{
     font-size: 20px;
@@ -830,7 +837,6 @@ footer{
 }
 
 .footer_social{
-    margin-right: var(--mb-1);
     text-decoration: none;
 }
 .row2 h3 {
@@ -976,21 +982,24 @@ padding-right: .5rem;
 }
 
 .cate1 {
-    padding: 15px 20px 10px 0;
-    margin: 5px 0 0 80px;
-    justify-content: center;
+    padding:  10px ;
+    margin: 0 15px 0 0 ;
     color: black;
-    width: 200px;
-   
+    width: 400px;
   }
-
-  .cate1  #searchbar{
+#searchbar{
     padding:10px;
+    border: none;
+}
+.cate1 span{
+    margin-right: 145px;
+}
+.cate1 select{
     background-color: var(--container-color);
     border: 1px solid black;
-    
+    border-radius: 0;
+    padding: 0;
 }
-
 .book_card{
 display: list-item;	
 }
@@ -1253,6 +1262,12 @@ justify-content: center;
     width: 40%;
     margin: auto;
 }
+.category1{
+    display: flex;
+    flex-direction: column;
+  
+}
+
   }
   @media only screen and (max-width: 950px) {
     .nav_link{

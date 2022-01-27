@@ -54,6 +54,8 @@ ul.breadcrumb li a:hover {
 .column_im {
   float: left;
   width: 25%;
+  margin: 0 25px;
+
 }
 .column_im2 {
   float: left;
@@ -81,9 +83,14 @@ ul.breadcrumb li a:hover {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.568);
 }
-
+.line_im{
+  background-color: rgb(165, 165, 165);
+  width: 100%;
+  height: 4px;
+  margin: 5px 0;
+}
 /* Modal Content */
 .modal-content_im {
   position: relative;
@@ -114,7 +121,6 @@ ul.breadcrumb li a:hover {
 .mySlides_im {
   display: none;
 }
-
 .cursor {
   cursor: pointer;
 }
@@ -187,8 +193,9 @@ img.hover-shadow {
 table {
   border-collapse: collapse;
   width: 100%;
+}
+.section1 table{
   margin-right: 4rem;
-
 }
 .section-title{
 margin-right: 2rem;
@@ -231,11 +238,10 @@ border-radius: 5px;
 }
 .section2  td {
   text-align: right;
-  padding: 18px 0;
+  padding: 8px 80px 8px 0;
   color: #a3a3a3;
 }
 .section2  td h3 {
   font-weight: bold;
   color: black;
-  
 }
